@@ -15,7 +15,7 @@ const BannerSection = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://via.placeholder.com/400x150" 
+                src="https://via.placeholder.com/600x300" 
                 alt="Mattress" 
                 className="w-full h-auto object-cover rounded"
               />

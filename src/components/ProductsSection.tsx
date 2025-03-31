@@ -16,6 +16,12 @@ interface ProductsSectionProps {
 }
 
 const ProductsSection: React.FC<ProductsSectionProps> = ({ title, products }) => {
+  // Update the product image URLs with proper dimensions
+  const updatedProducts = products.map(product => ({
+    ...product,
+    image: "https://via.placeholder.com/250x200"
+  }));
+
   return (
     <section className="py-6 px-4">
       <div className="container mx-auto">
@@ -27,8 +33,8 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({ title, products }) =>
         </div>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {products.map((product) => (
-            <div key={product.id} className="bg-white rounded-lg shadow-sm overflow-hidden relative group">
+          {updatedProducts.map((product) => (
+            <div key={product.id} className="bg-white rounded-lg shadow-sm overflow-hidden relative group hover-scale">
               <div className="absolute top-2 right-2 z-10">
                 <button className="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-gray-500 hover:text-wakeful-purple">
                   <Heart size={16} />

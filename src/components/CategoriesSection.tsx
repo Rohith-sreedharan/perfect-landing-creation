@@ -3,18 +3,18 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 
 const categoriesData = [
-  { name: "Bedroom Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Living Room Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Kitchen Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Office Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Bathroom Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Office Chairs", image: "https://via.placeholder.com/150" },
-  { name: "TV & Media Units", image: "https://via.placeholder.com/150" },
-  { name: "Coffee Tables", image: "https://via.placeholder.com/150" },
-  { name: "Bookcases & Shelves", image: "https://via.placeholder.com/150" },
-  { name: "Kids Furniture", image: "https://via.placeholder.com/150" },
-  { name: "Wardrobes", image: "https://via.placeholder.com/150" },
-  { name: "Dining Sets", image: "https://via.placeholder.com/150" },
+  { name: "Bedroom Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Living Room Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Kitchen Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Office Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Bathroom Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Office Chairs", image: "https://via.placeholder.com/200x150" },
+  { name: "TV & Media Units", image: "https://via.placeholder.com/200x150" },
+  { name: "Coffee Tables", image: "https://via.placeholder.com/200x150" },
+  { name: "Bookcases & Shelves", image: "https://via.placeholder.com/200x150" },
+  { name: "Kids Furniture", image: "https://via.placeholder.com/200x150" },
+  { name: "Wardrobes", image: "https://via.placeholder.com/200x150" },
+  { name: "Dining Sets", image: "https://via.placeholder.com/200x150" },
 ];
 
 const CategoriesSection = () => {
@@ -30,7 +30,7 @@ const CategoriesSection = () => {
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {categoriesData.slice(0, 12).map((category, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer">
+            <div key={index} className="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer hover-scale">
               <div className="h-24 bg-gray-200 flex items-center justify-center">
                 <img
                   src={category.image}

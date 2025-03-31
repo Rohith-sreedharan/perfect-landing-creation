@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import CategoriesSection from "@/components/CategoriesSection";
+import BankOffersSection from "@/components/BankOffersSection";
+import StoresSection from "@/components/StoresSection";
 import BannerSection from "@/components/BannerSection";
 import ProductsSection from "@/components/ProductsSection";
 import GiftSection from "@/components/GiftSection";
@@ -100,9 +102,11 @@ const Index = () => {
         <HeroSection />
         <FeaturesSection />
         <CategoriesSection />
+        <BankOffersSection />
         <BannerSection />
         <ProductsSection title="Top Selling Products" products={topSellingProducts} />
         <ProductsSection title="New Launches" products={newLaunchProducts} />
+        <StoresSection />
         <GiftSection />
         <InfoSection />
       </main>
